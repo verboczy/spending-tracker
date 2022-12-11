@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SpendingTypeRepository extends JpaRepository<SpendingType, Long> {
+
+    boolean existsByType(String type);
 }

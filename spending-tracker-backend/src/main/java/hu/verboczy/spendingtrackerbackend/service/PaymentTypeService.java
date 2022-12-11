@@ -49,7 +49,7 @@ public class PaymentTypeService {
         }
     }
 
-    public void updatePayment(PaymentTypeDto paymentTypeDto) {
+    public void updatePaymentType(PaymentTypeDto paymentTypeDto) {
         String newType = paymentTypeDto.getType();
         long id = paymentTypeDto.getId();
 

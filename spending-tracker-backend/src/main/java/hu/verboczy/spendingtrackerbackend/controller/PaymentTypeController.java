@@ -26,7 +26,7 @@ public class PaymentTypeController {
     public void updatePaymentType(@RequestBody PaymentTypeDto paymentType) {
         log.info("Request: updatePaymentType(id=[{}], newName=[{}])", paymentType.getId(), paymentType.getType());
         try {
-            paymentTypeService.updatePayment(paymentType);
+            paymentTypeService.updatePaymentType(paymentType);
         } catch (IllegalArgumentException illegalArgumentException) {
             log.warn(illegalArgumentException.getMessage());
         }
